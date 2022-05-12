@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@mdi/font/css/materialdesignicons.css"
+    />
+    <link rel="stylesheet" href="node_modules/izitoast/dist/css/iziToast.min.css">
+    <link rel="stylesheet" href="node_modules/promise-polyfill/">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>todos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Todo List</h1>
+      <form id="new_todo_form">
+        <input type="text" id="create_todo_input" placeholder="name of todo" />
+        <input type="submit" id="create_todo_submit" value="Add Todo" />
+      </form>
+    </header>
+    <main>
+      <section class="todo_list">
+        <div id="tasks"></div>
+      </section>
+    </main>
+  </body>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/izitoast/dist/js/iziToast.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
